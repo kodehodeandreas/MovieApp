@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Movietimes";
+  src: url("./fonts/MovieTimes-pg61.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stylethief";
+  src: url("./fonts/StyleThief-Mz6w.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rockout";
+  src: url("./fonts/Rockout-vVaM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Limelight";
+  src: url("./fonts/Limelight-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Retro";
+  src: url("./fonts/Retro\ Floral.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Showtime";
+  src: url("./fonts/Showtime-R9Ke.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
