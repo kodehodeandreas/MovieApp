@@ -194,7 +194,7 @@
   border: none;
   color: #f2f1f1;
   cursor: pointer;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   margin-left: 0.3rem;
@@ -202,6 +202,7 @@
 
 .read-more-btn:hover {
   text-decoration: underline;
+  color: #fb0202;
 }
 
 .read-more-btn:focus,
@@ -238,6 +239,7 @@
   box-shadow: 0 0 10px rgba(235, 232, 232, 0.721);
   animation: slideUp 0.3s ease;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modal-content h2 {
@@ -248,6 +250,7 @@
 .modal-release {
   color: #ccc;
   font-size: 0.9rem;
+  font-family: "Retro";
   margin-bottom: 1rem;
 }
 
