@@ -30,8 +30,8 @@ body {
   min-height: 100vh;
   position: relative;
   background-image: url("../assets/curtain.jpg");
-  background-size: contain; /* fyller hele området */
-  background-position: top-center; /* sentrerer bildet */
+  background-size: contain;
+  background-position: top-center;
   background-repeat: repeat-y;
   background-color: #000;
 }
@@ -45,18 +45,11 @@ body {
 
 a {
   font-weight: 500;
-  /* color: #646cff;*/
   text-decoration: inherit;
 }
 a:hover {
   color: #fb0202;
 }
-
-/*h1 {
-  font-family: "Stylethief";
-  font-size: 3.2em;
-  line-height: 1.1;
-}*/
 
 button {
   border-radius: 8px;

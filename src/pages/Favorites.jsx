@@ -15,18 +15,29 @@ function Favorites() {
   }, []);
 
   return (
-    <div className="Favorites">
-      <h2>Your Favorites</h2>
-      {favorites.length === 0 && <p>No favorites yet.</p>}
-      <div className="movies-grid">
-        {favorites.map((movie) => (
-          <MovieCard
-            key={movie.id}
-            movie={movie}
-            isFavoritePage={true}
-            onRemove={loadFavorites}
-          />
-        ))}
+    <div className="favorites-page">
+      {" "}
+      {/* <-- wrapper som fyller skjermen */}
+      <div className="favorites">
+        <h2>Your Favorites</h2>
+
+        {favorites.length === 0 && (
+          <div className="favorites-empty">
+            <h2>No favorites yet</h2>
+            <p>Add some movies to see them here!</p>
+          </div>
+        )}
+
+        <div className="movies-grid">
+          {favorites.map((movie) => (
+            <MovieCard
+              key={movie.id}
+              movie={movie}
+              isFavoritePage={true}
+              onRemove={loadFavorites}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

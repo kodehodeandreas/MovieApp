@@ -14,12 +14,12 @@
 .navbar-brand a {
   font-family: "Showtime", sans-serif;
   font-size: 2.5rem;
-  color: #d5d5d5;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .navbar-brand a:hover {
-  color: #969696;
+  color: #ffffff;
   background-color: #1a1a1a00;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .navbar-links a {
-  color: #e3e2e2;
+  color: #ffffff;
   text-decoration: none;
 }
 
