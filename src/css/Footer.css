@@ -1,11 +1,10 @@
 .footer {
-  background-color: #000000;
+  background-color: #1a1a1a;
   color: #ffffff;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2rem;
   text-align: center;
-  font-family: "Limelight", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-family: "Stylethief", sans-serif;
+  font-size: 0.9rem;
 }
 
 .footer-content {
@@ -22,13 +21,15 @@
   gap: 1.5rem;
 }
 
-.footer-links a {
+.footer-link {
+  display: flex;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-links a:hover {
+.footer-link:hover {
   color: #ff0000;
 }
 

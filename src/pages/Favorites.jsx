@@ -24,7 +24,7 @@ function Favorites() {
             key={movie.id}
             movie={movie}
             isFavoritePage={true}
-            onRemove={loadFavorites} // Oppdater listen når en film fjernes
+            onRemove={loadFavorites}
           />
         ))}
       </div>

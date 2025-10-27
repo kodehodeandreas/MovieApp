@@ -104,8 +104,8 @@
 }
 
 .favorite-btn .favorite-text {
-  display: none; /* skjult som standard */
-  margin-left: 0.5rem; /* litt plass mellom hjerte og tekst */
+  display: none;
+  margin-left: 0.5rem;
   font-size: 0.9rem;
   white-space: nowrap;
   color: white;
@@ -242,7 +242,7 @@
 
 .modal-content h2 {
   margin-top: 0;
-  font-family: "Limelight";
+  font-family: "Retro";
 }
 
 .modal-release {
@@ -267,7 +267,6 @@
   color: #ff0000;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
