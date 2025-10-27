@@ -65,3 +65,24 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .search-button,
+  .clear-button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 0.5rem;
+  }
+}
