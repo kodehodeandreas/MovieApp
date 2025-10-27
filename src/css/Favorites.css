@@ -41,6 +41,12 @@
   font-family: "Retro";
 }
 
+.favorite-btn {
+  font-family: "Retro";
+  color: #ff000d;
+  font-size: 1.2rem;
+}
+
 .movies-grid {
   display: flex;
   flex-wrap: wrap;
