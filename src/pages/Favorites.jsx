@@ -17,7 +17,6 @@ function Favorites() {
   return (
     <div className="favorites-page">
       {" "}
-      {/* <-- wrapper som fyller skjermen */}
       <div className="favorites">
         <h2>Your Favorites</h2>
 

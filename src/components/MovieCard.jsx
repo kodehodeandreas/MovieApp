@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import "../css/MovieCard.css";
 import { Heart, X } from "lucide-react";
 
 function MovieCard({ movie, isFavoritePage, onRemove }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [showFullOverview, setShowFullOverview] = useState(false);
-  const [showModal, setShowModal] = useState(false); //Her
+  const [showModal, setShowModal] = useState(false);
 
   const imageUrl = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
@@ -15,13 +16,11 @@ function MovieCard({ movie, isFavoritePage, onRemove }) {
   const closeModal = () => setShowModal(false);
 
   const overviewLimit = 100;
-
   const toggleOverview = () => setShowFullOverview((prev) => !prev);
 
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    const found = favorites.some((fav) => fav.id === movie.id);
-    setIsFavorite(found);
+    setIsFavorite(favorites.some((fav) => fav.id === movie.id));
   }, [movie.id]);
 
   function onFavoriteClick() {
@@ -103,18 +102,20 @@ function MovieCard({ movie, isFavoritePage, onRemove }) {
         </div>
       </div>
 
-      {showModal && (
-        <div className="movie-modal">
-          <div className="modal-content">
-            <button className="close-modal" onClick={closeModal}>
-              <X size={20} />
-            </button>
-            <h2>{movie.title}</h2>
-            <p className="modal-release">{movie.release_date}</p>
-            <p>{movie.overview}</p>
-          </div>
-        </div>
-      )}
+      {showModal &&
+        createPortal(
+          <div className="movie-modal">
+            <div className="modal-content">
+              <button className="close-modal" onClick={closeModal}>
+                <X size={20} />
+              </button>
+              <h2>{movie.title}</h2>
+              <p className="modal-release">{movie.release_date}</p>
+              <p>{movie.overview}</p>
+            </div>
+          </div>,
+          document.body
+        )}
     </>
   );
 }
